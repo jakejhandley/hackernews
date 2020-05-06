@@ -1,9 +1,12 @@
 "use strict"
 
+//add the api calls JS
+
 const url_maxitem = "http://hacker-news.firebaseio.com/v0/maxitem.json";
 const url_jobstories = "http://hacker-news.firebaseio.com/v0/jobstories.json";
 const url_topstories = "http://hacker-news.firebaseio.com/v0/topstories.json";
 
+//add your ajax call to get and display the data for the latest job posts - this call also links the title to the url
 
 $.ajax({
     url: url_jobstories,
@@ -27,7 +30,7 @@ $.ajax({
     }}
 );
 
-
+//add your ajax call to get and display the data for the highest scoring stories - this call also links the title to the url
 
 $.ajax({
     url: url_topstories,
